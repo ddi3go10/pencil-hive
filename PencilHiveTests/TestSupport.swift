@@ -36,10 +36,16 @@ enum TestLevels {
 
     /// Directory holding the shipped level JSON files.
     static var levelsDirectory: URL {
+        #if canImport(PencilHiveCore)
         URL(fileURLWithPath: #filePath)
             .deletingLastPathComponent()
             .deletingLastPathComponent()
             .appendingPathComponent("PencilHive/Resources/Levels")
+        #else
+        // The iOS test host must read its packaged resources, not the Mac checkout. Reading the
+        // host's Documents directory can wait on a macOS privacy prompt, and is not portable.
+        Bundle.main.bundleURL.appendingPathComponent("Levels")
+        #endif
     }
 }
 

@@ -49,6 +49,10 @@ extension GameScene {
         holder.addChild(shadow)
         holder.addChild(label)
         fxLayer.addChild(holder)
+        if reduceMotion {
+            holder.run(.sequence([.fadeOut(withDuration: 0.6), .removeFromParent()]))
+            return
+        }
         holder.setScale(0.6)
         holder.run(.sequence([
             .group([.scale(to: 1.1, duration: 0.12), .moveBy(x: 0, y: 16, duration: 0.12)]),

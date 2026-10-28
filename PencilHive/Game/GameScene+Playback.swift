@@ -73,6 +73,10 @@ extension GameScene {
     // MARK: Event player
 
     func play(_ events: [GameEvent], from index: Int = 0, dragged: StackNode?, completion: @escaping () -> Void) {
+        if index == 0, reduceMotion {
+            playReducedMotion(events, dragged: dragged, completion: completion)
+            return
+        }
         guard index < events.count else {
             completion()
             return
@@ -104,6 +108,38 @@ extension GameScene {
     }
 
     // MARK: Individual animations
+
+    /// Reveal the accepted state in place, without travel, rotation or bouncing. Keep the same
+    /// pencil-landed callbacks so the HUD and the win/fail lifecycle still complete exactly once.
+    private func playReducedMotion(_ events: [GameEvent], dragged: StackNode?, completion: () -> Void) {
+        dragged?.removeFromParent()
+        syncToState()
+        // A previous move's cosmetic squash may still be finishing when this move starts.
+        for node in Array(boardStacks.values) + Array(trayNodes.values) {
+            node.removeAllActions()
+            node.setScale(1)
+            node.zRotation = 0
+        }
+        for event in events {
+            switch event {
+            case .stackPlaced: feedback.play(.place); feedback.haptic(.medium)
+            case .tilesTransferred: feedback.play(.merge)
+            case let .pencilCompleted(_, color, _, regionID, _):
+                feedback.play(.pencil)
+                if regionID != nil {
+                    gameDelegate?.gameScene(self, pencilLanded: color, regionID: regionID)
+                }
+            case .stackRemoved: feedback.play(.place); feedback.haptic(.heavy)
+            case .trayRefreshed: feedback.play(.boost)
+            default: break
+            }
+        }
+        for layer in [stackLayer, trayLayer] {
+            layer.alpha = 0
+            layer.run(.fadeIn(withDuration: 0.15))
+        }
+        completion()
+    }
 
     private func animatePlacement(node: StackNode, cell: HexCoord, then next: @escaping () -> Void) {
         let target = layout.center(of: cell)

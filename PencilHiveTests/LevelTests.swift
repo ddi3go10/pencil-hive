@@ -9,6 +9,15 @@ import Testing
 
 @Suite("Level data")
 struct LevelTests {
+    #if !canImport(PencilHiveCore)
+    @Test func iOSTestsUseTheSamePackagedLevelsAsTheApp() throws {
+        #expect(TestLevels.levelsDirectory.path.hasPrefix(Bundle.main.bundlePath + "/"))
+        let packaged = try LevelLibrary.bundled()
+        let tested = try LevelLibrary.load(directory: TestLevels.levelsDirectory)
+        #expect(tested.levels == packaged.levels)
+    }
+    #endif
+
     @Test func shippedLevelsLoadAndValidate() throws {
         let library = try LevelLibrary.load(directory: TestLevels.levelsDirectory)
         #expect(library.levels.count >= 3)

@@ -64,15 +64,15 @@ final class GameViewModel: ObservableObject, GameSceneDelegate {
     let level: LevelDefinition
     let scene: GameScene
     /// Whether tile symbols are on, so the HUD chips can match the tiles.
-    let showsSymbols: Bool
+    @Published private(set) var showsSymbols: Bool
     private unowned let app: AppModel
 
-    init(level: LevelDefinition, app: AppModel) {
+    init(level: LevelDefinition, app: AppModel, reducedMotion: @escaping () -> Bool = GameScene.systemReduceMotion) {
         self.level = level
         self.app = app
         showsSymbols = app.showsTileSymbols
         let engine = app.save.restoreEngine(for: level) ?? GameEngine(level: level)
-        scene = GameScene(engine: engine, feedback: app.feedback)
+        scene = GameScene(engine: engine, feedback: app.feedback, reducedMotion: reducedMotion)
         scene.gameDelegate = self
         scene.showsSymbols = showsSymbols
         hud = Self.snapshot(of: engine)
@@ -84,6 +84,12 @@ final class GameViewModel: ObservableObject, GameSceneDelegate {
     }
 
     // MARK: Layout
+
+    func updateAccessibilitySettings(differentiateWithoutColor: Bool) {
+        showsSymbols = app.settings.tileSymbols || differentiateWithoutColor
+        // A running move finishes before its tiles are redrawn; its event callbacks stay intact.
+        scene.showsSymbols = showsSymbols
+    }
 
     func updateInsets(top: CGFloat, bottom: CGFloat) {
         scene.insets = SceneInsets(top: top, bottom: bottom)

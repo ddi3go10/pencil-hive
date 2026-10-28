@@ -15,7 +15,7 @@ private final class BoardAccessibilityElement: UIAccessibilityElement {
 // accessibility elements. Dragging is replaced by two double taps: pick a stack, then an empty cell.
 
 extension GameScene {
-    var reduceMotion: Bool { UIAccessibility.isReduceMotionEnabled }
+    static func systemReduceMotion() -> Bool { UIAccessibility.isReduceMotionEnabled }
 
     func refreshAccessibility() {
         guard let view else { return }
@@ -104,7 +104,7 @@ extension GameScene {
 }
 #else
 extension GameScene {
-    var reduceMotion: Bool { false }
+    static func systemReduceMotion() -> Bool { false }
     func refreshAccessibility() {}
     func announce(_ text: String) {}
     func announceOutcome() {}

@@ -19,7 +19,7 @@ You need a Mac with **Xcode 16 or newer** (built and checked with Xcode 27.1).
 1. Open the project:
 
    ```bash
-   open projects/pencil-hive/PencilHive.xcodeproj
+   open PencilHive.xcodeproj
    ```
 
 2. If Xcode asks, accept the license (`sudo xcodebuild -license accept`) and install an iOS Simulator
@@ -27,16 +27,16 @@ You need a Mac with **Xcode 16 or newer** (built and checked with Xcode 27.1).
 3. In the toolbar pick the **PencilHive** scheme and any iPhone simulator, e.g. *iPhone 17*.
 4. Press **Run** (⌘R). The app launches on the title screen. Tap **Play**.
 
-From a terminal, build and launch without opening Xcode:
+From a terminal, build and launch the app, then view the booted phone in Device Hub (Xcode 27)
+or Simulator (earlier Xcode versions):
 
 ```bash
-cd projects/pencil-hive
+# Run from the root of your pencil-hive checkout.
 xcrun simctl list devices available            # pick a device name, e.g. "iPhone 17"
 xcodebuild -project PencilHive.xcodeproj -scheme PencilHive \
   -destination 'platform=iOS Simulator,name=iPhone 17' \
   -derivedDataPath build build
 xcrun simctl boot "iPhone 17" || true
-open -a Simulator
 xcrun simctl install booted build/Build/Products/Debug-iphonesimulator/PencilHive.app
 xcrun simctl launch booted dev.pencilhive.PencilHive
 ```
@@ -295,3 +295,20 @@ An invalid Undo history is dropped while the valid current board remains playabl
 text layouts. Evidence, source and patches are in `finished works/pencil-hive/fixes-2026-10-25/`.
 The independent Luna audit found no further confirmed defect; physical-phone and manual VoiceOver
 checks remain pending.
+
+## Accessibility and test portability fixes (October 28, 2026)
+
+Reduce Motion now reveals accepted moves with fades instead of tile flights, rotations or bouncing,
+while keeping pencil progress, win recording and boosters working. Tile symbols update when the
+system's Differentiate Without Color setting changes during a level or while the app is away.
+Settings scrolls at large text sizes, and the first-move hint has its own row so it cannot cover
+the color goals. The launch commands above use this repository's current layout.
+
+iOS tests now load the level files packaged with the app. They no longer read the Mac checkout's
+Documents directory, which could stall the test run behind a host privacy prompt.
+
+Validation with Xcode 27.1: 125 core tests passed on macOS; all 154 iOS tests passed on an iPhone
+18 Pro simulator running iOS 27.0. A further 23 game-flow tests and two targeted screenshot tests
+passed after the final layout changes, including scrolling to the bottom of Settings at large text
+size. Debug simulator, Debug iPhone and unsigned Release iPhone builds succeeded. Physical-phone
+touch, audio, haptics and manual VoiceOver verification remain pending.
