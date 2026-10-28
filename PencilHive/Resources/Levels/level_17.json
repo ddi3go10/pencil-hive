@@ -1,0 +1,453 @@
+{
+  "artwork": {
+    "lineArt": [
+      {
+        "cx": 26,
+        "cy": 43,
+        "rx": 1.6,
+        "ry": 1.6,
+        "type": "ellipse"
+      },
+      {
+        "cx": 106,
+        "cy": 51,
+        "rx": 1.6,
+        "ry": 1.6,
+        "type": "ellipse"
+      },
+      {
+        "points": [
+          [
+            75,
+            62
+          ],
+          [
+            75,
+            68
+          ]
+        ],
+        "type": "polygon"
+      }
+    ],
+    "name": "Deep Sea Treasure",
+    "paper": "#E6F7FF",
+    "regions": [
+      {
+        "color": "sky",
+        "id": 1,
+        "shape": {
+          "h": 100,
+          "radius": 0,
+          "type": "rect",
+          "w": 150,
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "color": "indigo",
+        "id": 2,
+        "shape": {
+          "h": 72,
+          "radius": 0,
+          "type": "rect",
+          "w": 150,
+          "x": 0,
+          "y": 28
+        }
+      },
+      {
+        "color": "amber",
+        "id": 3,
+        "shape": {
+          "points": [
+            [
+              0,
+              86
+            ],
+            [
+              50,
+              80
+            ],
+            [
+              100,
+              88
+            ],
+            [
+              150,
+              82
+            ],
+            [
+              150,
+              100
+            ],
+            [
+              0,
+              100
+            ]
+          ],
+          "type": "polygon"
+        }
+      },
+      {
+        "color": "coral",
+        "id": 4,
+        "shape": {
+          "h": 22,
+          "radius": 3,
+          "type": "rect",
+          "w": 38,
+          "x": 56,
+          "y": 62
+        }
+      },
+      {
+        "color": "lemon",
+        "id": 5,
+        "shape": {
+          "h": 10,
+          "radius": 5,
+          "type": "rect",
+          "w": 38,
+          "x": 56,
+          "y": 56
+        }
+      },
+      {
+        "color": "rose",
+        "id": 6,
+        "shape": {
+          "cx": 30,
+          "cy": 44,
+          "rx": 17,
+          "ry": 9,
+          "type": "ellipse"
+        }
+      },
+      {
+        "color": "rose",
+        "id": 7,
+        "shape": {
+          "points": [
+            [
+              44,
+              44
+            ],
+            [
+              58,
+              35
+            ],
+            [
+              58,
+              53
+            ]
+          ],
+          "type": "polygon"
+        }
+      },
+      {
+        "color": "mint",
+        "id": 8,
+        "shape": {
+          "cx": 110,
+          "cy": 52,
+          "rx": 17,
+          "ry": 9,
+          "type": "ellipse"
+        }
+      },
+      {
+        "color": "mint",
+        "id": 9,
+        "shape": {
+          "points": [
+            [
+              124,
+              52
+            ],
+            [
+              138,
+              43
+            ],
+            [
+              138,
+              61
+            ]
+          ],
+          "type": "polygon"
+        }
+      },
+      {
+        "color": "violet",
+        "id": 10,
+        "shape": {
+          "cx": 22,
+          "cy": 70,
+          "rx": 8,
+          "ry": 12,
+          "type": "ellipse"
+        }
+      },
+      {
+        "color": "lemon",
+        "id": 11,
+        "shape": {
+          "cx": 128,
+          "cy": 74,
+          "rx": 6,
+          "ry": 6,
+          "type": "ellipse"
+        }
+      }
+    ]
+  },
+  "boardRadius": 3,
+  "boosters": {
+    "hammer": 2,
+    "refresh": 2,
+    "undo": 3
+  },
+  "id": 17,
+  "maxStackHeight": 10,
+  "name": "Deep Sea Treasure",
+  "pencilSize": 4,
+  "prefilled": [
+    {
+      "cell": [
+        2,
+        -2
+      ],
+      "stack": [
+        "indigo",
+        "indigo",
+        "indigo"
+      ]
+    },
+    {
+      "cell": [
+        -1,
+        -1
+      ],
+      "stack": [
+        "lemon",
+        "lemon",
+        "lemon"
+      ]
+    },
+    {
+      "cell": [
+        2,
+        -1
+      ],
+      "stack": [
+        "rose",
+        "rose",
+        "mint"
+      ]
+    },
+    {
+      "cell": [
+        -2,
+        0
+      ],
+      "stack": [
+        "amber",
+        "amber"
+      ]
+    },
+    {
+      "cell": [
+        -1,
+        1
+      ],
+      "stack": [
+        "mint",
+        "mint"
+      ]
+    },
+    {
+      "cell": [
+        1,
+        1
+      ],
+      "stack": [
+        "mint",
+        "mint"
+      ]
+    }
+  ],
+  "removed": [
+    [
+      -3,
+      0
+    ],
+    [
+      -3,
+      1
+    ],
+    [
+      -3,
+      2
+    ],
+    [
+      -3,
+      3
+    ],
+    [
+      -2,
+      -1
+    ],
+    [
+      -2,
+      1
+    ],
+    [
+      -2,
+      2
+    ],
+    [
+      -2,
+      3
+    ],
+    [
+      -1,
+      -2
+    ],
+    [
+      -1,
+      3
+    ],
+    [
+      0,
+      -3
+    ],
+    [
+      0,
+      -2
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      -3
+    ],
+    [
+      1,
+      -2
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      -3
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      -3
+    ],
+    [
+      3,
+      -2
+    ],
+    [
+      3,
+      -1
+    ],
+    [
+      3,
+      0
+    ]
+  ],
+  "starGoal": {
+    "kind": "stacks",
+    "value": 14
+  },
+  "supply": [
+    [
+      "rose",
+      "rose",
+      "rose"
+    ],
+    [
+      "mint",
+      "mint",
+      "amber",
+      "amber"
+    ],
+    [
+      "amber",
+      "amber",
+      "amber",
+      "mint"
+    ],
+    [
+      "rose",
+      "rose"
+    ],
+    [
+      "violet"
+    ],
+    [
+      "violet",
+      "violet",
+      "violet"
+    ],
+    [
+      "coral",
+      "coral",
+      "violet",
+      "violet"
+    ],
+    [
+      "indigo",
+      "indigo"
+    ],
+    [
+      "violet",
+      "violet"
+    ],
+    [
+      "rose",
+      "sky",
+      "sky"
+    ],
+    [
+      "indigo"
+    ],
+    [
+      "coral",
+      "coral",
+      "lemon",
+      "lemon"
+    ],
+    [
+      "amber"
+    ],
+    [
+      "lemon",
+      "lemon",
+      "sky",
+      "sky"
+    ],
+    [
+      "lemon"
+    ],
+    [
+      "indigo",
+      "indigo"
+    ]
+  ],
+  "trayCount": 3
+}

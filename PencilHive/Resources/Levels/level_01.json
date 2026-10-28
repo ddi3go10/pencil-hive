@@ -1,0 +1,192 @@
+{
+  "artwork": {
+    "lineArt": [
+      {
+        "h": 18,
+        "radius": 2,
+        "type": "rect",
+        "w": 12,
+        "x": 62,
+        "y": 70
+      },
+      {
+        "h": 9,
+        "radius": 0,
+        "type": "rect",
+        "w": 9,
+        "x": 48,
+        "y": 62
+      },
+      {
+        "h": 9,
+        "radius": 0,
+        "type": "rect",
+        "w": 9,
+        "x": 80,
+        "y": 62
+      }
+    ],
+    "name": "Sunny Cottage",
+    "paper": "#FFF6DC",
+    "regions": [
+      {
+        "color": "sky",
+        "id": 1,
+        "shape": {
+          "h": 100,
+          "radius": 0,
+          "type": "rect",
+          "w": 150,
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "color": "lemon",
+        "id": 2,
+        "shape": {
+          "cx": 118,
+          "cy": 26,
+          "rx": 15,
+          "ry": 15,
+          "type": "ellipse"
+        }
+      },
+      {
+        "color": "mint",
+        "id": 3,
+        "shape": {
+          "points": [
+            [
+              0,
+              70
+            ],
+            [
+              30,
+              58
+            ],
+            [
+              70,
+              64
+            ],
+            [
+              110,
+              54
+            ],
+            [
+              150,
+              62
+            ],
+            [
+              150,
+              100
+            ],
+            [
+              0,
+              100
+            ]
+          ],
+          "type": "polygon"
+        }
+      },
+      {
+        "color": "lemon",
+        "id": 4,
+        "shape": {
+          "h": 32,
+          "radius": 2,
+          "type": "rect",
+          "w": 52,
+          "x": 42,
+          "y": 56
+        }
+      },
+      {
+        "color": "coral",
+        "id": 5,
+        "shape": {
+          "points": [
+            [
+              34,
+              58
+            ],
+            [
+              68,
+              30
+            ],
+            [
+              102,
+              58
+            ]
+          ],
+          "type": "polygon"
+        }
+      }
+    ]
+  },
+  "boardRadius": 2,
+  "boosters": {
+    "hammer": 2,
+    "refresh": 1,
+    "undo": 5
+  },
+  "id": 1,
+  "maxStackHeight": 10,
+  "name": "Sunny Cottage",
+  "pencilSize": 3,
+  "prefilled": [
+    {
+      "cell": [
+        0,
+        -2
+      ],
+      "stack": [
+        "lemon"
+      ]
+    },
+    {
+      "cell": [
+        -2,
+        1
+      ],
+      "stack": [
+        "mint",
+        "mint"
+      ]
+    }
+  ],
+  "removed": [],
+  "starGoal": {
+    "kind": "chain",
+    "value": 4
+  },
+  "supply": [
+    [
+      "sky"
+    ],
+    [
+      "lemon"
+    ],
+    [
+      "lemon",
+      "coral"
+    ],
+    [
+      "lemon",
+      "mint"
+    ],
+    [
+      "coral",
+      "coral",
+      "lemon"
+    ],
+    [
+      "sky",
+      "sky"
+    ],
+    [
+      "lemon"
+    ]
+  ],
+  "trayCount": 3
+}

@@ -1,0 +1,142 @@
+{
+ "id": 1,
+ "name": "Sunny Cottage",
+ "pencilSize": 3,
+ "boardRadius": 2,
+ "removed": [
+  [
+   2,
+   -2
+  ],
+  [
+   -2,
+   2
+  ]
+ ],
+ "artwork": {
+  "name": "Sunny Cottage",
+  "paper": "#FFF6DC",
+  "regions": [
+   {
+    "id": 1,
+    "color": "sky",
+    "shape": {
+     "type": "rect",
+     "x": 0,
+     "y": 0,
+     "w": 150,
+     "h": 100,
+     "radius": 0
+    }
+   },
+   {
+    "id": 2,
+    "color": "lemon",
+    "shape": {
+     "type": "ellipse",
+     "cx": 118,
+     "cy": 26,
+     "rx": 15,
+     "ry": 15
+    }
+   },
+   {
+    "id": 3,
+    "color": "mint",
+    "shape": {
+     "type": "polygon",
+     "points": [
+      [
+       0,
+       70
+      ],
+      [
+       30,
+       58
+      ],
+      [
+       70,
+       64
+      ],
+      [
+       110,
+       54
+      ],
+      [
+       150,
+       62
+      ],
+      [
+       150,
+       100
+      ],
+      [
+       0,
+       100
+      ]
+     ]
+    }
+   },
+   {
+    "id": 4,
+    "color": "lemon",
+    "shape": {
+     "type": "rect",
+     "x": 42,
+     "y": 56,
+     "w": 52,
+     "h": 32,
+     "radius": 2
+    }
+   },
+   {
+    "id": 5,
+    "color": "coral",
+    "shape": {
+     "type": "polygon",
+     "points": [
+      [
+       34,
+       58
+      ],
+      [
+       68,
+       30
+      ],
+      [
+       102,
+       58
+      ]
+     ]
+    }
+   }
+  ],
+  "lineArt": [
+   {
+    "type": "rect",
+    "x": 62,
+    "y": 70,
+    "w": 12,
+    "h": 18,
+    "radius": 2
+   },
+   {
+    "type": "rect",
+    "x": 48,
+    "y": 62,
+    "w": 9,
+    "h": 9,
+    "radius": 0
+   },
+   {
+    "type": "rect",
+    "x": 80,
+    "y": 62,
+    "w": 9,
+    "h": 9,
+    "radius": 0
+   }
+  ]
+ },
+ "supply": []
+}

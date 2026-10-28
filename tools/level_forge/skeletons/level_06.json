@@ -1,0 +1,122 @@
+{
+ "id": 6,
+ "name": "Red Barn",
+ "pencilSize": 4,
+ "boardRadius": 2,
+ "removed": [],
+ "artwork": {
+  "name": "Red Barn",
+  "paper": "#FFF6DC",
+  "regions": [
+   {
+    "id": 1,
+    "color": "sky",
+    "shape": {
+     "type": "rect",
+     "x": 0,
+     "y": 0,
+     "w": 150,
+     "h": 100,
+     "radius": 0
+    }
+   },
+   {
+    "id": 2,
+    "color": "lemon",
+    "shape": {
+     "type": "ellipse",
+     "cx": 28,
+     "cy": 22,
+     "rx": 13,
+     "ry": 13
+    }
+   },
+   {
+    "id": 3,
+    "color": "mint",
+    "shape": {
+     "type": "rect",
+     "x": 0,
+     "y": 72,
+     "w": 150,
+     "h": 28,
+     "radius": 0
+    }
+   },
+   {
+    "id": 4,
+    "color": "coral",
+    "shape": {
+     "type": "rect",
+     "x": 46,
+     "y": 46,
+     "w": 58,
+     "h": 34,
+     "radius": 2
+    }
+   },
+   {
+    "id": 5,
+    "color": "amber",
+    "shape": {
+     "type": "polygon",
+     "points": [
+      [
+       40,
+       48
+      ],
+      [
+       75,
+       22
+      ],
+      [
+       110,
+       48
+      ]
+     ]
+    }
+   },
+   {
+    "id": 6,
+    "color": "lemon",
+    "shape": {
+     "type": "rect",
+     "x": 66,
+     "y": 58,
+     "w": 18,
+     "h": 22,
+     "radius": 1
+    }
+   }
+  ],
+  "lineArt": [
+   {
+    "type": "polygon",
+    "points": [
+     [
+      46,
+      46
+     ],
+     [
+      104,
+      80
+     ]
+    ]
+   },
+   {
+    "type": "polygon",
+    "points": [
+     [
+      104,
+      46
+     ],
+     [
+      46,
+      80
+     ]
+    ]
+   }
+  ]
+ },
+ "supply": []
+}

@@ -1,0 +1,319 @@
+{
+  "artwork" : {
+    "lineArt" : [
+      {
+        "cx" : 48,
+        "cy" : 46,
+        "rx" : 1.6,
+        "ry" : 1.6,
+        "type" : "ellipse"
+      },
+      {
+        "cx" : 100,
+        "cy" : 64,
+        "rx" : 1.6,
+        "ry" : 1.6,
+        "type" : "ellipse"
+      }
+    ],
+    "name" : "Goldfish Pond",
+    "paper" : "#EAFBF5",
+    "regions" : [
+      {
+        "color" : "mint",
+        "id" : 1,
+        "shape" : {
+          "h" : 100,
+          "radius" : 0,
+          "type" : "rect",
+          "w" : 150,
+          "x" : 0,
+          "y" : 0
+        }
+      },
+      {
+        "color" : "sky",
+        "id" : 2,
+        "shape" : {
+          "cx" : 75,
+          "cy" : 52,
+          "rx" : 62,
+          "ry" : 38,
+          "type" : "ellipse"
+        }
+      },
+      {
+        "color" : "amber",
+        "id" : 3,
+        "shape" : {
+          "cx" : 56,
+          "cy" : 48,
+          "rx" : 17,
+          "ry" : 9,
+          "type" : "ellipse"
+        }
+      },
+      {
+        "color" : "amber",
+        "id" : 4,
+        "shape" : {
+          "points" : [
+            [
+              70,
+              48
+            ],
+            [
+              84,
+              39
+            ],
+            [
+              84,
+              57
+            ]
+          ],
+          "type" : "polygon"
+        }
+      },
+      {
+        "color" : "coral",
+        "id" : 5,
+        "shape" : {
+          "cx" : 92,
+          "cy" : 66,
+          "rx" : 17,
+          "ry" : 9,
+          "type" : "ellipse"
+        }
+      },
+      {
+        "color" : "coral",
+        "id" : 6,
+        "shape" : {
+          "points" : [
+            [
+              106,
+              66
+            ],
+            [
+              120,
+              57
+            ],
+            [
+              120,
+              75
+            ]
+          ],
+          "type" : "polygon"
+        }
+      },
+      {
+        "color" : "lemon",
+        "id" : 7,
+        "shape" : {
+          "cx" : 112,
+          "cy" : 36,
+          "rx" : 8,
+          "ry" : 5,
+          "type" : "ellipse"
+        }
+      },
+      {
+        "color" : "rose",
+        "id" : 8,
+        "shape" : {
+          "cx" : 24,
+          "cy" : 24,
+          "rx" : 9,
+          "ry" : 9,
+          "type" : "ellipse"
+        }
+      },
+      {
+        "color" : "violet",
+        "id" : 9,
+        "shape" : {
+          "cx" : 130,
+          "cy" : 82,
+          "rx" : 12,
+          "ry" : 7,
+          "type" : "ellipse"
+        }
+      }
+    ]
+  },
+  "boardRadius" : 3,
+  "boosters" : {
+    "hammer" : 3,
+    "refresh" : 2,
+    "undo" : 5
+  },
+  "id" : 10,
+  "maxStackHeight" : 10,
+  "name" : "Goldfish Pond",
+  "pencilSize" : 4,
+  "prefilled" : [
+    {
+      "cell" : [
+        2,
+        -2
+      ],
+      "stack" : [
+        "mint",
+        "mint",
+        "mint"
+      ]
+    },
+    {
+      "cell" : [
+        2,
+        -1
+      ],
+      "stack" : [
+        "mint",
+        "sky"
+      ]
+    },
+    {
+      "cell" : [
+        -2,
+        0
+      ],
+      "stack" : [
+        "amber"
+      ]
+    },
+    {
+      "cell" : [
+        -1,
+        0
+      ],
+      "stack" : [
+        "coral",
+        "coral"
+      ]
+    },
+    {
+      "cell" : [
+        1,
+        0
+      ],
+      "stack" : [
+        "violet",
+        "violet"
+      ]
+    }
+  ],
+  "removed" : [
+    [
+      -3,
+      0
+    ],
+    [
+      -3,
+      1
+    ],
+    [
+      -3,
+      2
+    ],
+    [
+      -2,
+      -1
+    ],
+    [
+      -2,
+      3
+    ],
+    [
+      -1,
+      -2
+    ],
+    [
+      -1,
+      3
+    ],
+    [
+      0,
+      -3
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      -3
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      -3
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      -2
+    ],
+    [
+      3,
+      -1
+    ]
+  ],
+  "starGoal" : {
+    "kind" : "score",
+    "value" : 1270
+  },
+  "supply" : [
+    [
+      "coral",
+      "lemon",
+      "lemon"
+    ],
+    [
+      "coral"
+    ],
+    [
+      "rose",
+      "rose",
+      "rose",
+      "sky"
+    ],
+    [
+      "coral",
+      "rose"
+    ],
+    [
+      "coral",
+      "amber",
+      "amber",
+      "amber"
+    ],
+    [
+      "violet",
+      "violet",
+      "sky",
+      "sky"
+    ],
+    [
+      "amber",
+      "amber"
+    ],
+    [
+      "amber",
+      "amber",
+      "lemon",
+      "lemon"
+    ],
+    [
+      "coral",
+      "coral"
+    ]
+  ],
+  "trayCount" : 3
+}

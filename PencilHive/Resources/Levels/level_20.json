@@ -1,0 +1,474 @@
+{
+  "artwork" : {
+    "lineArt" : [
+
+    ],
+    "name" : "Grand Finale",
+    "paper" : "#FFF6DC",
+    "regions" : [
+      {
+        "color" : "sky",
+        "id" : 1,
+        "shape" : {
+          "h" : 100,
+          "radius" : 0,
+          "type" : "rect",
+          "w" : 150,
+          "x" : 0,
+          "y" : 0
+        }
+      },
+      {
+        "color" : "lemon",
+        "id" : 2,
+        "shape" : {
+          "cx" : 126,
+          "cy" : 16,
+          "rx" : 11,
+          "ry" : 11,
+          "type" : "ellipse"
+        }
+      },
+      {
+        "color" : "violet",
+        "id" : 3,
+        "shape" : {
+          "h" : 28,
+          "radius" : 0,
+          "type" : "rect",
+          "w" : 150,
+          "x" : 0,
+          "y" : 72
+        }
+      },
+      {
+        "color" : "indigo",
+        "id" : 4,
+        "shape" : {
+          "points" : [
+            [
+              0,
+              72
+            ],
+            [
+              24,
+              40
+            ],
+            [
+              48,
+              72
+            ]
+          ],
+          "type" : "polygon"
+        }
+      },
+      {
+        "color" : "indigo",
+        "id" : 5,
+        "shape" : {
+          "points" : [
+            [
+              102,
+              72
+            ],
+            [
+              126,
+              40
+            ],
+            [
+              150,
+              72
+            ]
+          ],
+          "type" : "polygon"
+        }
+      },
+      {
+        "color" : "coral",
+        "id" : 6,
+        "shape" : {
+          "cx" : 75,
+          "cy" : 56,
+          "rx" : 30,
+          "ry" : 30,
+          "type" : "ellipse"
+        }
+      },
+      {
+        "color" : "amber",
+        "id" : 7,
+        "shape" : {
+          "cx" : 75,
+          "cy" : 56,
+          "rx" : 20,
+          "ry" : 20,
+          "type" : "ellipse"
+        }
+      },
+      {
+        "color" : "lemon",
+        "id" : 8,
+        "shape" : {
+          "cx" : 75,
+          "cy" : 56,
+          "rx" : 10,
+          "ry" : 10,
+          "type" : "ellipse"
+        }
+      },
+      {
+        "color" : "mint",
+        "id" : 9,
+        "shape" : {
+          "cx" : 20,
+          "cy" : 86,
+          "rx" : 16,
+          "ry" : 8,
+          "type" : "ellipse"
+        }
+      },
+      {
+        "color" : "rose",
+        "id" : 10,
+        "shape" : {
+          "cx" : 130,
+          "cy" : 86,
+          "rx" : 16,
+          "ry" : 8,
+          "type" : "ellipse"
+        }
+      },
+      {
+        "color" : "sky",
+        "id" : 11,
+        "shape" : {
+          "cx" : 30,
+          "cy" : 20,
+          "rx" : 12,
+          "ry" : 6,
+          "type" : "ellipse"
+        }
+      },
+      {
+        "color" : "mint",
+        "id" : 12,
+        "shape" : {
+          "points" : [
+            [
+              75,
+              6
+            ],
+            [
+              77.1,
+              11.2
+            ],
+            [
+              82.6,
+              11.5
+            ],
+            [
+              78.3,
+              15.1
+            ],
+            [
+              79.7,
+              20.5
+            ],
+            [
+              75,
+              17.5
+            ],
+            [
+              70.3,
+              20.5
+            ],
+            [
+              71.7,
+              15.1
+            ],
+            [
+              67.4,
+              11.5
+            ],
+            [
+              72.9,
+              11.2
+            ]
+          ],
+          "type" : "polygon"
+        }
+      }
+    ]
+  },
+  "boardRadius" : 3,
+  "boosters" : {
+    "hammer" : 2,
+    "refresh" : 2,
+    "undo" : 3
+  },
+  "id" : 20,
+  "maxStackHeight" : 10,
+  "name" : "Grand Finale",
+  "pencilSize" : 4,
+  "prefilled" : [
+    {
+      "cell" : [
+        1,
+        -2
+      ],
+      "stack" : [
+        "lemon",
+        "lemon",
+        "coral",
+        "coral"
+      ]
+    },
+    {
+      "cell" : [
+        -1,
+        -1
+      ],
+      "stack" : [
+        "lemon"
+      ]
+    },
+    {
+      "cell" : [
+        1,
+        0
+      ],
+      "stack" : [
+        "indigo",
+        "indigo",
+        "indigo"
+      ]
+    },
+    {
+      "cell" : [
+        -1,
+        1
+      ],
+      "stack" : [
+        "rose",
+        "rose"
+      ]
+    },
+    {
+      "cell" : [
+        0,
+        1
+      ],
+      "stack" : [
+        "violet",
+        "sky"
+      ]
+    },
+    {
+      "cell" : [
+        -2,
+        2
+      ],
+      "stack" : [
+        "indigo",
+        "indigo",
+        "indigo"
+      ]
+    }
+  ],
+  "removed" : [
+    [
+      -3,
+      0
+    ],
+    [
+      -3,
+      1
+    ],
+    [
+      -3,
+      2
+    ],
+    [
+      -3,
+      3
+    ],
+    [
+      -2,
+      -1
+    ],
+    [
+      -2,
+      0
+    ],
+    [
+      -2,
+      3
+    ],
+    [
+      -1,
+      -2
+    ],
+    [
+      -1,
+      2
+    ],
+    [
+      -1,
+      3
+    ],
+    [
+      0,
+      -3
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      -3
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      -3
+    ],
+    [
+      2,
+      -1
+    ],
+    [
+      2,
+      0
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      -3
+    ],
+    [
+      3,
+      -2
+    ],
+    [
+      3,
+      -1
+    ],
+    [
+      3,
+      0
+    ]
+  ],
+  "starGoal" : {
+    "kind" : "score",
+    "value" : 1990
+  },
+  "supply" : [
+    [
+      "mint",
+      "mint",
+      "amber"
+    ],
+    [
+      "mint",
+      "mint",
+      "mint"
+    ],
+    [
+      "mint"
+    ],
+    [
+      "mint",
+      "mint",
+      "mint"
+    ],
+    [
+      "sky"
+    ],
+    [
+      "coral"
+    ],
+    [
+      "lemon",
+      "lemon"
+    ],
+    [
+      "sky",
+      "sky",
+      "sky"
+    ],
+    [
+      "indigo",
+      "indigo",
+      "indigo",
+      "amber"
+    ],
+    [
+      "rose",
+      "rose",
+      "rose"
+    ],
+    [
+      "amber",
+      "amber"
+    ],
+    [
+      "indigo",
+      "rose",
+      "rose"
+    ],
+    [
+      "rose",
+      "mint",
+      "mint"
+    ],
+    [
+      "violet"
+    ],
+    [
+      "coral",
+      "lemon"
+    ],
+    [
+      "indigo",
+      "indigo"
+    ],
+    [
+      "sky",
+      "sky"
+    ],
+    [
+      "violet",
+      "violet"
+    ],
+    [
+      "sky",
+      "lemon",
+      "lemon",
+      "lemon"
+    ],
+    [
+      "lemon",
+      "lemon",
+      "lemon"
+    ],
+    [
+      "mint"
+    ]
+  ],
+  "trayCount" : 3
+}

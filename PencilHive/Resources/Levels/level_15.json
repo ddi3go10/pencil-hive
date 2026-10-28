@@ -1,0 +1,460 @@
+{
+  "artwork" : {
+    "lineArt" : [
+      {
+        "points" : [
+          [
+            20,
+            16
+          ],
+          [
+            21.1,
+            18.5
+          ],
+          [
+            23.8,
+            18.8
+          ],
+          [
+            21.7,
+            20.6
+          ],
+          [
+            22.4,
+            23.2
+          ],
+          [
+            20,
+            21.8
+          ],
+          [
+            17.6,
+            23.2
+          ],
+          [
+            18.3,
+            20.6
+          ],
+          [
+            16.2,
+            18.8
+          ],
+          [
+            18.9,
+            18.5
+          ]
+        ],
+        "type" : "polygon"
+      },
+      {
+        "points" : [
+          [
+            90,
+            9
+          ],
+          [
+            90.8,
+            10.9
+          ],
+          [
+            92.9,
+            11.1
+          ],
+          [
+            91.3,
+            12.4
+          ],
+          [
+            91.8,
+            14.4
+          ],
+          [
+            90,
+            13.4
+          ],
+          [
+            88.2,
+            14.4
+          ],
+          [
+            88.7,
+            12.4
+          ],
+          [
+            87.1,
+            11.1
+          ],
+          [
+            89.2,
+            10.9
+          ]
+        ],
+        "type" : "polygon"
+      },
+      {
+        "points" : [
+          [
+            50,
+            87
+          ],
+          [
+            50.8,
+            88.9
+          ],
+          [
+            52.9,
+            89.1
+          ],
+          [
+            51.3,
+            90.4
+          ],
+          [
+            51.8,
+            92.4
+          ],
+          [
+            50,
+            91.4
+          ],
+          [
+            48.2,
+            92.4
+          ],
+          [
+            48.7,
+            90.4
+          ],
+          [
+            47.1,
+            89.1
+          ],
+          [
+            49.2,
+            88.9
+          ]
+        ],
+        "type" : "polygon"
+      }
+    ],
+    "name" : "Space Station",
+    "paper" : "#F4EEFF",
+    "regions" : [
+      {
+        "color" : "indigo",
+        "id" : 1,
+        "shape" : {
+          "h" : 100,
+          "radius" : 0,
+          "type" : "rect",
+          "w" : 150,
+          "x" : 0,
+          "y" : 0
+        }
+      },
+      {
+        "color" : "sky",
+        "id" : 2,
+        "shape" : {
+          "cx" : 30,
+          "cy" : 74,
+          "rx" : 24,
+          "ry" : 24,
+          "type" : "ellipse"
+        }
+      },
+      {
+        "color" : "rose",
+        "id" : 3,
+        "shape" : {
+          "h" : 20,
+          "radius" : 4,
+          "type" : "rect",
+          "w" : 46,
+          "x" : 52,
+          "y" : 44
+        }
+      },
+      {
+        "color" : "lemon",
+        "id" : 4,
+        "shape" : {
+          "h" : 12,
+          "radius" : 0,
+          "type" : "rect",
+          "w" : 24,
+          "x" : 24,
+          "y" : 48
+        }
+      },
+      {
+        "color" : "lemon",
+        "id" : 5,
+        "shape" : {
+          "h" : 12,
+          "radius" : 0,
+          "type" : "rect",
+          "w" : 24,
+          "x" : 102,
+          "y" : 48
+        }
+      },
+      {
+        "color" : "coral",
+        "id" : 6,
+        "shape" : {
+          "cx" : 75,
+          "cy" : 40,
+          "rx" : 12,
+          "ry" : 12,
+          "type" : "ellipse"
+        }
+      },
+      {
+        "color" : "violet",
+        "id" : 7,
+        "shape" : {
+          "cx" : 120,
+          "cy" : 82,
+          "rx" : 16,
+          "ry" : 10,
+          "type" : "ellipse"
+        }
+      },
+      {
+        "color" : "mint",
+        "id" : 8,
+        "shape" : {
+          "cx" : 118,
+          "cy" : 18,
+          "rx" : 8,
+          "ry" : 8,
+          "type" : "ellipse"
+        }
+      }
+    ]
+  },
+  "boardRadius" : 3,
+  "boosters" : {
+    "hammer" : 2,
+    "refresh" : 2,
+    "undo" : 3
+  },
+  "id" : 15,
+  "maxStackHeight" : 10,
+  "name" : "Space Station",
+  "pencilSize" : 4,
+  "prefilled" : [
+    {
+      "cell" : [
+        0,
+        -2
+      ],
+      "stack" : [
+        "violet",
+        "lemon",
+        "lemon",
+        "lemon"
+      ]
+    },
+    {
+      "cell" : [
+        1,
+        -2
+      ],
+      "stack" : [
+        "lemon",
+        "coral",
+        "coral"
+      ]
+    },
+    {
+      "cell" : [
+        0,
+        0
+      ],
+      "stack" : [
+        "sky",
+        "sky",
+        "lemon"
+      ]
+    },
+    {
+      "cell" : [
+        2,
+        0
+      ],
+      "stack" : [
+        "violet",
+        "violet",
+        "violet"
+      ]
+    },
+    {
+      "cell" : [
+        -2,
+        1
+      ],
+      "stack" : [
+        "violet",
+        "mint"
+      ]
+    },
+    {
+      "cell" : [
+        -2,
+        2
+      ],
+      "stack" : [
+        "lemon",
+        "lemon"
+      ]
+    }
+  ],
+  "removed" : [
+    [
+      -3,
+      0
+    ],
+    [
+      -3,
+      1
+    ],
+    [
+      -3,
+      2
+    ],
+    [
+      -3,
+      3
+    ],
+    [
+      -2,
+      -1
+    ],
+    [
+      -2,
+      0
+    ],
+    [
+      -2,
+      3
+    ],
+    [
+      -1,
+      -2
+    ],
+    [
+      -1,
+      -1
+    ],
+    [
+      -1,
+      2
+    ],
+    [
+      -1,
+      3
+    ],
+    [
+      0,
+      -3
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      -3
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      -3
+    ],
+    [
+      2,
+      -2
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      -3
+    ],
+    [
+      3,
+      -2
+    ],
+    [
+      3,
+      -1
+    ],
+    [
+      3,
+      0
+    ]
+  ],
+  "starGoal" : {
+    "kind" : "score",
+    "value" : 1270
+  },
+  "supply" : [
+    [
+      "lemon",
+      "lemon"
+    ],
+    [
+      "mint",
+      "mint"
+    ],
+    [
+      "violet",
+      "coral",
+      "coral"
+    ],
+    [
+      "coral",
+      "indigo",
+      "indigo"
+    ],
+    [
+      "violet",
+      "rose",
+      "rose",
+      "rose"
+    ],
+    [
+      "mint"
+    ],
+    [
+      "indigo",
+      "indigo"
+    ],
+    [
+      "lemon",
+      "lemon",
+      "sky"
+    ],
+    [
+      "coral",
+      "coral",
+      "indigo",
+      "indigo"
+    ],
+    [
+      "rose"
+    ],
+    [
+      "sky",
+      "indigo"
+    ]
+  ],
+  "trayCount" : 3
+}

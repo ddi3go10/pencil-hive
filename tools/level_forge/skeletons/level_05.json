@@ -1,0 +1,181 @@
+{
+ "id": 5,
+ "name": "Windy Meadow",
+ "pencilSize": 3,
+ "boardRadius": 2,
+ "removed": [],
+ "artwork": {
+  "name": "Windy Meadow",
+  "paper": "#FFF6DC",
+  "regions": [
+   {
+    "id": 1,
+    "color": "sky",
+    "shape": {
+     "type": "rect",
+     "x": 0,
+     "y": 0,
+     "w": 150,
+     "h": 100,
+     "radius": 0
+    }
+   },
+   {
+    "id": 2,
+    "color": "lemon",
+    "shape": {
+     "type": "ellipse",
+     "cx": 120,
+     "cy": 22,
+     "rx": 13,
+     "ry": 13
+    }
+   },
+   {
+    "id": 3,
+    "color": "mint",
+    "shape": {
+     "type": "polygon",
+     "points": [
+      [
+       0,
+       74
+      ],
+      [
+       30,
+       62
+      ],
+      [
+       70,
+       68
+      ],
+      [
+       110,
+       58
+      ],
+      [
+       150,
+       66
+      ],
+      [
+       150,
+       100
+      ],
+      [
+       0,
+       100
+      ]
+     ]
+    }
+   },
+   {
+    "id": 4,
+    "color": "rose",
+    "shape": {
+     "type": "ellipse",
+     "cx": 32,
+     "cy": 80,
+     "rx": 9,
+     "ry": 9
+    }
+   },
+   {
+    "id": 5,
+    "color": "lemon",
+    "shape": {
+     "type": "ellipse",
+     "cx": 32,
+     "cy": 80,
+     "rx": 3.5,
+     "ry": 3.5
+    }
+   },
+   {
+    "id": 6,
+    "color": "coral",
+    "shape": {
+     "type": "ellipse",
+     "cx": 70,
+     "cy": 84,
+     "rx": 9,
+     "ry": 9
+    }
+   },
+   {
+    "id": 7,
+    "color": "lemon",
+    "shape": {
+     "type": "ellipse",
+     "cx": 70,
+     "cy": 84,
+     "rx": 3.5,
+     "ry": 3.5
+    }
+   },
+   {
+    "id": 8,
+    "color": "violet",
+    "shape": {
+     "type": "ellipse",
+     "cx": 108,
+     "cy": 80,
+     "rx": 9,
+     "ry": 9
+    }
+   },
+   {
+    "id": 9,
+    "color": "lemon",
+    "shape": {
+     "type": "ellipse",
+     "cx": 108,
+     "cy": 80,
+     "rx": 3.5,
+     "ry": 3.5
+    }
+   }
+  ],
+  "lineArt": [
+   {
+    "type": "polygon",
+    "points": [
+     [
+      32,
+      89
+     ],
+     [
+      32,
+      96
+     ]
+    ]
+   },
+   {
+    "type": "polygon",
+    "points": [
+     [
+      70,
+      93
+     ],
+     [
+      70,
+      99
+     ]
+    ]
+   },
+   {
+    "type": "polygon",
+    "points": [
+     [
+      108,
+      89
+     ],
+     [
+      108,
+      96
+     ]
+    ]
+   }
+  ]
+ },
+ "supply": []
+}

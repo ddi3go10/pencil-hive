@@ -1,0 +1,269 @@
+{
+  "artwork": {
+    "lineArt": [
+      {
+        "cx": 110,
+        "cy": 52,
+        "rx": 2,
+        "ry": 2,
+        "type": "ellipse"
+      },
+      {
+        "cx": 115,
+        "cy": 57,
+        "rx": 2.5,
+        "ry": 2,
+        "type": "ellipse"
+      },
+      {
+        "points": [
+          [
+            52,
+            80
+          ],
+          [
+            52,
+            90
+          ]
+        ],
+        "type": "polygon"
+      },
+      {
+        "points": [
+          [
+            84,
+            80
+          ],
+          [
+            84,
+            90
+          ]
+        ],
+        "type": "polygon"
+      }
+    ],
+    "name": "Little Fox",
+    "paper": "#FFF6DC",
+    "regions": [
+      {
+        "color": "sky",
+        "id": 1,
+        "shape": {
+          "h": 100,
+          "radius": 0,
+          "type": "rect",
+          "w": 150,
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "color": "lemon",
+        "id": 2,
+        "shape": {
+          "cx": 122,
+          "cy": 22,
+          "rx": 13,
+          "ry": 13,
+          "type": "ellipse"
+        }
+      },
+      {
+        "color": "mint",
+        "id": 3,
+        "shape": {
+          "h": 28,
+          "radius": 0,
+          "type": "rect",
+          "w": 150,
+          "x": 0,
+          "y": 72
+        }
+      },
+      {
+        "color": "coral",
+        "id": 4,
+        "shape": {
+          "points": [
+            [
+              26,
+              66
+            ],
+            [
+              6,
+              44
+            ],
+            [
+              32,
+              46
+            ],
+            [
+              48,
+              72
+            ]
+          ],
+          "type": "polygon"
+        }
+      },
+      {
+        "color": "amber",
+        "id": 5,
+        "shape": {
+          "cx": 70,
+          "cy": 66,
+          "rx": 28,
+          "ry": 16,
+          "type": "ellipse"
+        }
+      },
+      {
+        "color": "rose",
+        "id": 6,
+        "shape": {
+          "points": [
+            [
+              92,
+              48
+            ],
+            [
+              94,
+              28
+            ],
+            [
+              103,
+              40
+            ],
+            [
+              109,
+              40
+            ],
+            [
+              118,
+              28
+            ],
+            [
+              120,
+              48
+            ]
+          ],
+          "type": "polygon"
+        }
+      },
+      {
+        "color": "amber",
+        "id": 7,
+        "shape": {
+          "cx": 106,
+          "cy": 54,
+          "rx": 15,
+          "ry": 13,
+          "type": "ellipse"
+        }
+      }
+    ]
+  },
+  "boardRadius": 2,
+  "boosters": {
+    "hammer": 2,
+    "refresh": 2,
+    "undo": 5
+  },
+  "id": 2,
+  "maxStackHeight": 10,
+  "name": "Little Fox",
+  "pencilSize": 4,
+  "prefilled": [
+    {
+      "cell": [
+        1,
+        -1
+      ],
+      "stack": [
+        "amber",
+        "amber",
+        "lemon"
+      ]
+    },
+    {
+      "cell": [
+        1,
+        0
+      ],
+      "stack": [
+        "rose",
+        "rose",
+        "coral",
+        "coral"
+      ]
+    },
+    {
+      "cell": [
+        -2,
+        1
+      ],
+      "stack": [
+        "sky",
+        "sky",
+        "sky",
+        "amber"
+      ]
+    },
+    {
+      "cell": [
+        -1,
+        1
+      ],
+      "stack": [
+        "coral",
+        "coral",
+        "mint"
+      ]
+    }
+  ],
+  "removed": [],
+  "starGoal": {
+    "kind": "stacks",
+    "value": 7
+  },
+  "supply": [
+    [
+      "coral",
+      "coral"
+    ],
+    [
+      "sky",
+      "amber",
+      "amber"
+    ],
+    [
+      "lemon",
+      "lemon",
+      "amber"
+    ],
+    [
+      "mint",
+      "lemon"
+    ],
+    [
+      "amber",
+      "amber"
+    ],
+    [
+      "lemon",
+      "lemon"
+    ],
+    [
+      "rose",
+      "rose",
+      "mint",
+      "mint"
+    ],
+    [
+      "amber",
+      "amber"
+    ],
+    ["mint"],
+    ["rose", "rose"]
+  ],
+  "trayCount": 3
+}

@@ -1,0 +1,449 @@
+{
+  "artwork": {
+    "lineArt": [
+      {
+        "points": [
+          [
+            76,
+            37
+          ],
+          [
+            76.8,
+            38.9
+          ],
+          [
+            78.9,
+            39.1
+          ],
+          [
+            77.3,
+            40.4
+          ],
+          [
+            77.8,
+            42.4
+          ],
+          [
+            76,
+            41.4
+          ],
+          [
+            74.2,
+            42.4
+          ],
+          [
+            74.7,
+            40.4
+          ],
+          [
+            73.1,
+            39.1
+          ],
+          [
+            75.2,
+            38.9
+          ]
+        ],
+        "type": "polygon"
+      },
+      {
+        "points": [
+          [
+            100,
+            24
+          ],
+          [
+            100,
+            80
+          ]
+        ],
+        "type": "polygon"
+      },
+      {
+        "points": [
+          [
+            72,
+            52
+          ],
+          [
+            128,
+            52
+          ]
+        ],
+        "type": "polygon"
+      }
+    ],
+    "name": "Carnival Night",
+    "paper": "#EEF2FF",
+    "regions": [
+      {
+        "color": "indigo",
+        "id": 1,
+        "shape": {
+          "h": 100,
+          "radius": 0,
+          "type": "rect",
+          "w": 150,
+          "x": 0,
+          "y": 0
+        }
+      },
+      {
+        "color": "violet",
+        "id": 2,
+        "shape": {
+          "h": 20,
+          "radius": 0,
+          "type": "rect",
+          "w": 150,
+          "x": 0,
+          "y": 80
+        }
+      },
+      {
+        "color": "coral",
+        "id": 3,
+        "shape": {
+          "points": [
+            [
+              20,
+              30
+            ],
+            [
+              60,
+              30
+            ],
+            [
+              60,
+              80
+            ],
+            [
+              20,
+              80
+            ]
+          ],
+          "type": "polygon"
+        }
+      },
+      {
+        "color": "lemon",
+        "id": 4,
+        "shape": {
+          "points": [
+            [
+              20,
+              30
+            ],
+            [
+              40,
+              12
+            ],
+            [
+              60,
+              30
+            ]
+          ],
+          "type": "polygon"
+        }
+      },
+      {
+        "color": "rose",
+        "id": 5,
+        "shape": {
+          "cx": 100,
+          "cy": 52,
+          "rx": 28,
+          "ry": 28,
+          "type": "ellipse"
+        }
+      },
+      {
+        "color": "sky",
+        "id": 6,
+        "shape": {
+          "cx": 100,
+          "cy": 52,
+          "rx": 16,
+          "ry": 16,
+          "type": "ellipse"
+        }
+      },
+      {
+        "color": "amber",
+        "id": 7,
+        "shape": {
+          "h": 6,
+          "radius": 0,
+          "type": "rect",
+          "w": 8,
+          "x": 96,
+          "y": 78
+        }
+      },
+      {
+        "color": "mint",
+        "id": 8,
+        "shape": {
+          "cx": 130,
+          "cy": 24,
+          "rx": 10,
+          "ry": 13,
+          "type": "ellipse"
+        }
+      },
+      {
+        "color": "amber",
+        "id": 9,
+        "shape": {
+          "cx": 14,
+          "cy": 16,
+          "rx": 10,
+          "ry": 13,
+          "type": "ellipse"
+        }
+      },
+      {
+        "color": "lemon",
+        "id": 10,
+        "shape": {
+          "cx": 75,
+          "cy": 14,
+          "rx": 6,
+          "ry": 6,
+          "type": "ellipse"
+        }
+      }
+    ]
+  },
+  "boardRadius": 3,
+  "boosters": {
+    "hammer": 2,
+    "refresh": 2,
+    "undo": 3
+  },
+  "id": 19,
+  "maxStackHeight": 10,
+  "name": "Carnival Night",
+  "pencilSize": 4,
+  "prefilled": [
+    {
+      "cell": [
+        -1,
+        -1
+      ],
+      "stack": [
+        "lemon",
+        "lemon"
+      ]
+    },
+    {
+      "cell": [
+        0,
+        -1
+      ],
+      "stack": [
+        "sky",
+        "sky",
+        "sky",
+        "indigo"
+      ]
+    },
+    {
+      "cell": [
+        0,
+        0
+      ],
+      "stack": [
+        "violet",
+        "coral",
+        "coral",
+        "coral"
+      ]
+    },
+    {
+      "cell": [
+        1,
+        0
+      ],
+      "stack": [
+        "indigo",
+        "indigo",
+        "rose",
+        "rose"
+      ]
+    },
+    {
+      "cell": [
+        -1,
+        1
+      ],
+      "stack": [
+        "amber",
+        "amber",
+        "amber"
+      ]
+    },
+    {
+      "cell": [
+        0,
+        1
+      ],
+      "stack": [
+        "rose",
+        "rose",
+        "indigo",
+        "indigo"
+      ]
+    }
+  ],
+  "removed": [
+    [
+      -3,
+      0
+    ],
+    [
+      -3,
+      1
+    ],
+    [
+      -3,
+      2
+    ],
+    [
+      -3,
+      3
+    ],
+    [
+      -2,
+      -1
+    ],
+    [
+      -2,
+      0
+    ],
+    [
+      -2,
+      2
+    ],
+    [
+      -2,
+      3
+    ],
+    [
+      -1,
+      -2
+    ],
+    [
+      -1,
+      2
+    ],
+    [
+      -1,
+      3
+    ],
+    [
+      0,
+      -3
+    ],
+    [
+      0,
+      -2
+    ],
+    [
+      0,
+      2
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      -3
+    ],
+    [
+      1,
+      1
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      -3
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      -3
+    ],
+    [
+      3,
+      -2
+    ],
+    [
+      3,
+      -1
+    ],
+    [
+      3,
+      0
+    ]
+  ],
+  "starGoal": {
+    "kind": "stacks",
+    "value": 8
+  },
+  "supply": [
+    [
+      "amber",
+      "amber",
+      "amber",
+      "sky"
+    ],
+    [
+      "lemon",
+      "lemon",
+      "lemon"
+    ],
+    [
+      "amber",
+      "mint"
+    ],
+    [
+      "indigo",
+      "coral"
+    ],
+    [
+      "mint",
+      "violet",
+      "violet"
+    ],
+    [
+      "mint",
+      "mint",
+      "lemon"
+    ],
+    [
+      "amber",
+      "lemon",
+      "lemon"
+    ],
+    [
+      "violet",
+      "violet",
+      "indigo",
+      "indigo"
+    ],
+    [
+      "violet",
+      "violet",
+      "violet"
+    ]
+  ],
+  "trayCount": 3
+}

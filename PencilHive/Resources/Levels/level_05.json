@@ -1,0 +1,284 @@
+{
+  "artwork" : {
+    "lineArt" : [
+      {
+        "points" : [
+          [
+            32,
+            89
+          ],
+          [
+            32,
+            96
+          ]
+        ],
+        "type" : "polygon"
+      },
+      {
+        "points" : [
+          [
+            70,
+            93
+          ],
+          [
+            70,
+            99
+          ]
+        ],
+        "type" : "polygon"
+      },
+      {
+        "points" : [
+          [
+            108,
+            89
+          ],
+          [
+            108,
+            96
+          ]
+        ],
+        "type" : "polygon"
+      }
+    ],
+    "name" : "Windy Meadow",
+    "paper" : "#FFF6DC",
+    "regions" : [
+      {
+        "color" : "sky",
+        "id" : 1,
+        "shape" : {
+          "h" : 100,
+          "radius" : 0,
+          "type" : "rect",
+          "w" : 150,
+          "x" : 0,
+          "y" : 0
+        }
+      },
+      {
+        "color" : "lemon",
+        "id" : 2,
+        "shape" : {
+          "cx" : 120,
+          "cy" : 22,
+          "rx" : 13,
+          "ry" : 13,
+          "type" : "ellipse"
+        }
+      },
+      {
+        "color" : "mint",
+        "id" : 3,
+        "shape" : {
+          "points" : [
+            [
+              0,
+              74
+            ],
+            [
+              30,
+              62
+            ],
+            [
+              70,
+              68
+            ],
+            [
+              110,
+              58
+            ],
+            [
+              150,
+              66
+            ],
+            [
+              150,
+              100
+            ],
+            [
+              0,
+              100
+            ]
+          ],
+          "type" : "polygon"
+        }
+      },
+      {
+        "color" : "rose",
+        "id" : 4,
+        "shape" : {
+          "cx" : 32,
+          "cy" : 80,
+          "rx" : 9,
+          "ry" : 9,
+          "type" : "ellipse"
+        }
+      },
+      {
+        "color" : "lemon",
+        "id" : 5,
+        "shape" : {
+          "cx" : 32,
+          "cy" : 80,
+          "rx" : 3.5,
+          "ry" : 3.5,
+          "type" : "ellipse"
+        }
+      },
+      {
+        "color" : "coral",
+        "id" : 6,
+        "shape" : {
+          "cx" : 70,
+          "cy" : 84,
+          "rx" : 9,
+          "ry" : 9,
+          "type" : "ellipse"
+        }
+      },
+      {
+        "color" : "lemon",
+        "id" : 7,
+        "shape" : {
+          "cx" : 70,
+          "cy" : 84,
+          "rx" : 3.5,
+          "ry" : 3.5,
+          "type" : "ellipse"
+        }
+      },
+      {
+        "color" : "violet",
+        "id" : 8,
+        "shape" : {
+          "cx" : 108,
+          "cy" : 80,
+          "rx" : 9,
+          "ry" : 9,
+          "type" : "ellipse"
+        }
+      },
+      {
+        "color" : "lemon",
+        "id" : 9,
+        "shape" : {
+          "cx" : 108,
+          "cy" : 80,
+          "rx" : 3.5,
+          "ry" : 3.5,
+          "type" : "ellipse"
+        }
+      }
+    ]
+  },
+  "boardRadius" : 2,
+  "boosters" : {
+    "hammer" : 3,
+    "refresh" : 2,
+    "undo" : 5
+  },
+  "id" : 5,
+  "maxStackHeight" : 10,
+  "name" : "Windy Meadow",
+  "pencilSize" : 3,
+  "prefilled" : [
+    {
+      "cell" : [
+        1,
+        -2
+      ],
+      "stack" : [
+        "lemon"
+      ]
+    },
+    {
+      "cell" : [
+        2,
+        0
+      ],
+      "stack" : [
+        "violet",
+        "mint"
+      ]
+    },
+    {
+      "cell" : [
+        0,
+        1
+      ],
+      "stack" : [
+        "lemon"
+      ]
+    },
+    {
+      "cell" : [
+        -2,
+        2
+      ],
+      "stack" : [
+        "lemon",
+        "lemon"
+      ]
+    }
+  ],
+  "removed" : [
+
+  ],
+  "starGoal" : {
+    "kind" : "score",
+    "value" : 850
+  },
+  "supply" : [
+    [
+      "lemon",
+      "lemon"
+    ],
+    [
+      "sky",
+      "coral"
+    ],
+    [
+      "rose"
+    ],
+    [
+      "lemon"
+    ],
+    [
+      "violet",
+      "violet"
+    ],
+    [
+      "mint"
+    ],
+    [
+      "lemon",
+      "lemon"
+    ],
+    [
+      "lemon"
+    ],
+    [
+      "rose",
+      "rose"
+    ],
+    [
+      "mint"
+    ],
+    [
+      "sky",
+      "sky"
+    ],
+    [
+      "coral",
+      "coral",
+      "lemon",
+      "lemon"
+    ],
+    ["lemon", "lemon"],
+    ["coral"],
+    ["sky"],
+    ["lemon"]
+  ],
+  "trayCount" : 3
+}

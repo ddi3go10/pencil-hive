@@ -1,0 +1,233 @@
+{
+  "artwork" : {
+    "lineArt" : [
+      {
+        "points" : [
+          [
+            74,
+            14
+          ],
+          [
+            74,
+            62
+          ]
+        ],
+        "type" : "polygon"
+      },
+      {
+        "points" : [
+          [
+            8,
+            74
+          ],
+          [
+            30,
+            72
+          ],
+          [
+            52,
+            74
+          ]
+        ],
+        "type" : "polygon"
+      }
+    ],
+    "name" : "Paper Boat",
+    "paper" : "#EAF6FF",
+    "regions" : [
+      {
+        "color" : "sky",
+        "id" : 1,
+        "shape" : {
+          "h" : 100,
+          "radius" : 0,
+          "type" : "rect",
+          "w" : 150,
+          "x" : 0,
+          "y" : 0
+        }
+      },
+      {
+        "color" : "indigo",
+        "id" : 2,
+        "shape" : {
+          "h" : 36,
+          "radius" : 0,
+          "type" : "rect",
+          "w" : 150,
+          "x" : 0,
+          "y" : 64
+        }
+      },
+      {
+        "color" : "coral",
+        "id" : 3,
+        "shape" : {
+          "points" : [
+            [
+              38,
+              62
+            ],
+            [
+              112,
+              62
+            ],
+            [
+              96,
+              82
+            ],
+            [
+              54,
+              82
+            ]
+          ],
+          "type" : "polygon"
+        }
+      },
+      {
+        "color" : "lemon",
+        "id" : 4,
+        "shape" : {
+          "points" : [
+            [
+              74,
+              18
+            ],
+            [
+              74,
+              60
+            ],
+            [
+              102,
+              60
+            ]
+          ],
+          "type" : "polygon"
+        }
+      },
+      {
+        "color" : "rose",
+        "id" : 5,
+        "shape" : {
+          "points" : [
+            [
+              70,
+              24
+            ],
+            [
+              70,
+              60
+            ],
+            [
+              46,
+              60
+            ]
+          ],
+          "type" : "polygon"
+        }
+      },
+      {
+        "color" : "amber",
+        "id" : 6,
+        "shape" : {
+          "cx" : 124,
+          "cy" : 20,
+          "rx" : 11,
+          "ry" : 11,
+          "type" : "ellipse"
+        }
+      }
+    ]
+  },
+  "boardRadius" : 2,
+  "boosters" : {
+    "hammer" : 3,
+    "refresh" : 2,
+    "undo" : 5
+  },
+  "id" : 7,
+  "maxStackHeight" : 10,
+  "name" : "Paper Boat",
+  "pencilSize" : 4,
+  "prefilled" : [
+    {
+      "cell" : [
+        0,
+        -1
+      ],
+      "stack" : [
+        "rose",
+        "rose"
+      ]
+    },
+    {
+      "cell" : [
+        -1,
+        0
+      ],
+      "stack" : [
+        "amber",
+        "amber",
+        "coral",
+        "coral"
+      ]
+    },
+    {
+      "cell" : [
+        -2,
+        1
+      ],
+      "stack" : [
+        "sky",
+        "sky"
+      ]
+    },
+    {
+      "cell" : [
+        -1,
+        1
+      ],
+      "stack" : [
+        "amber",
+        "amber"
+      ]
+    }
+  ],
+  "removed" : [
+
+  ],
+  "starGoal" : {
+    "kind" : "score",
+    "value" : 1140
+  },
+  "supply" : [
+    [
+      "coral",
+      "indigo",
+      "indigo",
+      "indigo"
+    ],
+    [
+      "lemon",
+      "sky",
+      "sky"
+    ],
+    [
+      "lemon",
+      "lemon",
+      "coral"
+    ],
+    [
+      "rose",
+      "rose",
+      "indigo"
+    ],
+    [
+      "lemon"
+    ],
+    ["coral"],
+    ["lemon", "lemon"],
+    ["rose", "rose"]
+  ],
+  "trayCount" : 3
+}

@@ -1,0 +1,206 @@
+{
+  "artwork" : {
+    "lineArt" : [
+      {
+        "points" : [
+          [
+            46,
+            46
+          ],
+          [
+            104,
+            80
+          ]
+        ],
+        "type" : "polygon"
+      },
+      {
+        "points" : [
+          [
+            104,
+            46
+          ],
+          [
+            46,
+            80
+          ]
+        ],
+        "type" : "polygon"
+      }
+    ],
+    "name" : "Red Barn",
+    "paper" : "#FFF6DC",
+    "regions" : [
+      {
+        "color" : "sky",
+        "id" : 1,
+        "shape" : {
+          "h" : 100,
+          "radius" : 0,
+          "type" : "rect",
+          "w" : 150,
+          "x" : 0,
+          "y" : 0
+        }
+      },
+      {
+        "color" : "lemon",
+        "id" : 2,
+        "shape" : {
+          "cx" : 28,
+          "cy" : 22,
+          "rx" : 13,
+          "ry" : 13,
+          "type" : "ellipse"
+        }
+      },
+      {
+        "color" : "mint",
+        "id" : 3,
+        "shape" : {
+          "h" : 28,
+          "radius" : 0,
+          "type" : "rect",
+          "w" : 150,
+          "x" : 0,
+          "y" : 72
+        }
+      },
+      {
+        "color" : "coral",
+        "id" : 4,
+        "shape" : {
+          "h" : 34,
+          "radius" : 2,
+          "type" : "rect",
+          "w" : 58,
+          "x" : 46,
+          "y" : 46
+        }
+      },
+      {
+        "color" : "amber",
+        "id" : 5,
+        "shape" : {
+          "points" : [
+            [
+              40,
+              48
+            ],
+            [
+              75,
+              22
+            ],
+            [
+              110,
+              48
+            ]
+          ],
+          "type" : "polygon"
+        }
+      },
+      {
+        "color" : "lemon",
+        "id" : 6,
+        "shape" : {
+          "h" : 22,
+          "radius" : 1,
+          "type" : "rect",
+          "w" : 18,
+          "x" : 66,
+          "y" : 58
+        }
+      }
+    ]
+  },
+  "boardRadius" : 2,
+  "boosters" : {
+    "hammer" : 3,
+    "refresh" : 2,
+    "undo" : 5
+  },
+  "id" : 6,
+  "maxStackHeight" : 10,
+  "name" : "Red Barn",
+  "pencilSize" : 4,
+  "prefilled" : [
+    {
+      "cell" : [
+        1,
+        -2
+      ],
+      "stack" : [
+        "sky",
+        "sky"
+      ]
+    },
+    {
+      "cell" : [
+        2,
+        -1
+      ],
+      "stack" : [
+        "lemon",
+        "amber",
+        "amber",
+        "amber"
+      ]
+    },
+    {
+      "cell" : [
+        1,
+        0
+      ],
+      "stack" : [
+        "coral",
+        "coral",
+        "coral"
+      ]
+    },
+    {
+      "cell" : [
+        0,
+        2
+      ],
+      "stack" : [
+        "mint",
+        "mint",
+        "mint"
+      ]
+    }
+  ],
+  "removed" : [
+
+  ],
+  "starGoal" : {
+    "kind" : "score",
+    "value" : 800
+  },
+  "supply" : [
+    [
+      "lemon",
+      "lemon",
+      "lemon"
+    ],
+    [
+      "lemon"
+    ],
+    [
+      "mint"
+    ],
+    [
+      "lemon",
+      "lemon",
+      "amber"
+    ],
+    [
+      "lemon"
+    ],
+    [
+      "sky",
+      "sky",
+      "coral"
+    ]
+  ],
+  "trayCount" : 3
+}

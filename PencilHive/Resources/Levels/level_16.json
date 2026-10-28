@@ -1,0 +1,416 @@
+{
+  "artwork" : {
+    "lineArt" : [
+      {
+        "h" : 22,
+        "radius" : 2,
+        "type" : "rect",
+        "w" : 10,
+        "x" : 98,
+        "y" : 62
+      },
+      {
+        "points" : [
+          [
+            126,
+            41
+          ],
+          [
+            126,
+            56
+          ]
+        ],
+        "type" : "polygon"
+      }
+    ],
+    "name" : "Garden Party",
+    "paper" : "#FFF6DC",
+    "regions" : [
+      {
+        "color" : "sky",
+        "id" : 1,
+        "shape" : {
+          "h" : 100,
+          "radius" : 0,
+          "type" : "rect",
+          "w" : 150,
+          "x" : 0,
+          "y" : 0
+        }
+      },
+      {
+        "color" : "lemon",
+        "id" : 2,
+        "shape" : {
+          "cx" : 22,
+          "cy" : 20,
+          "rx" : 12,
+          "ry" : 12,
+          "type" : "ellipse"
+        }
+      },
+      {
+        "color" : "mint",
+        "id" : 3,
+        "shape" : {
+          "h" : 30,
+          "radius" : 0,
+          "type" : "rect",
+          "w" : 150,
+          "x" : 0,
+          "y" : 70
+        }
+      },
+      {
+        "color" : "lemon",
+        "id" : 4,
+        "shape" : {
+          "h" : 28,
+          "radius" : 2,
+          "type" : "rect",
+          "w" : 40,
+          "x" : 86,
+          "y" : 56
+        }
+      },
+      {
+        "color" : "coral",
+        "id" : 5,
+        "shape" : {
+          "points" : [
+            [
+              80,
+              58
+            ],
+            [
+              106,
+              32
+            ],
+            [
+              132,
+              58
+            ]
+          ],
+          "type" : "polygon"
+        }
+      },
+      {
+        "color" : "amber",
+        "id" : 6,
+        "shape" : {
+          "h" : 20,
+          "radius" : 0,
+          "type" : "rect",
+          "w" : 6,
+          "x" : 27,
+          "y" : 62
+        }
+      },
+      {
+        "color" : "mint",
+        "id" : 7,
+        "shape" : {
+          "cx" : 30,
+          "cy" : 52,
+          "rx" : 14,
+          "ry" : 18,
+          "type" : "ellipse"
+        }
+      },
+      {
+        "color" : "rose",
+        "id" : 8,
+        "shape" : {
+          "cx" : 62,
+          "cy" : 88,
+          "rx" : 9,
+          "ry" : 9,
+          "type" : "ellipse"
+        }
+      },
+      {
+        "color" : "lemon",
+        "id" : 9,
+        "shape" : {
+          "cx" : 62,
+          "cy" : 88,
+          "rx" : 3.5,
+          "ry" : 3.5,
+          "type" : "ellipse"
+        }
+      },
+      {
+        "color" : "violet",
+        "id" : 10,
+        "shape" : {
+          "cx" : 138,
+          "cy" : 88,
+          "rx" : 9,
+          "ry" : 9,
+          "type" : "ellipse"
+        }
+      },
+      {
+        "color" : "lemon",
+        "id" : 11,
+        "shape" : {
+          "cx" : 138,
+          "cy" : 88,
+          "rx" : 3.5,
+          "ry" : 3.5,
+          "type" : "ellipse"
+        }
+      },
+      {
+        "color" : "rose",
+        "id" : 12,
+        "shape" : {
+          "cx" : 126,
+          "cy" : 28,
+          "rx" : 10,
+          "ry" : 13,
+          "type" : "ellipse"
+        }
+      }
+    ]
+  },
+  "boardRadius" : 3,
+  "boosters" : {
+    "hammer" : 2,
+    "refresh" : 2,
+    "undo" : 3
+  },
+  "id" : 16,
+  "maxStackHeight" : 10,
+  "name" : "Garden Party",
+  "pencilSize" : 4,
+  "prefilled" : [
+    {
+      "cell" : [
+        0,
+        -2
+      ],
+      "stack" : [
+        "lemon",
+        "lemon",
+        "amber",
+        "amber"
+      ]
+    },
+    {
+      "cell" : [
+        -1,
+        -1
+      ],
+      "stack" : [
+        "rose"
+      ]
+    },
+    {
+      "cell" : [
+        2,
+        -1
+      ],
+      "stack" : [
+        "rose",
+        "rose"
+      ]
+    },
+    {
+      "cell" : [
+        -1,
+        0
+      ],
+      "stack" : [
+        "mint"
+      ]
+    },
+    {
+      "cell" : [
+        2,
+        0
+      ],
+      "stack" : [
+        "coral",
+        "coral",
+        "coral"
+      ]
+    },
+    {
+      "cell" : [
+        0,
+        2
+      ],
+      "stack" : [
+        "sky",
+        "sky"
+      ]
+    }
+  ],
+  "removed" : [
+    [
+      -3,
+      0
+    ],
+    [
+      -3,
+      1
+    ],
+    [
+      -3,
+      2
+    ],
+    [
+      -3,
+      3
+    ],
+    [
+      -2,
+      -1
+    ],
+    [
+      -2,
+      0
+    ],
+    [
+      -2,
+      3
+    ],
+    [
+      -1,
+      -2
+    ],
+    [
+      -1,
+      2
+    ],
+    [
+      -1,
+      3
+    ],
+    [
+      0,
+      -3
+    ],
+    [
+      0,
+      3
+    ],
+    [
+      1,
+      -3
+    ],
+    [
+      1,
+      -2
+    ],
+    [
+      1,
+      2
+    ],
+    [
+      2,
+      -3
+    ],
+    [
+      2,
+      -2
+    ],
+    [
+      2,
+      1
+    ],
+    [
+      3,
+      -3
+    ],
+    [
+      3,
+      -2
+    ],
+    [
+      3,
+      -1
+    ],
+    [
+      3,
+      0
+    ]
+  ],
+  "starGoal" : {
+    "kind" : "score",
+    "value" : 1820
+  },
+  "supply" : [
+    [
+      "lemon",
+      "lemon",
+      "lemon"
+    ],
+    [
+      "lemon",
+      "violet",
+      "violet"
+    ],
+    [
+      "lemon",
+      "lemon"
+    ],
+    [
+      "mint",
+      "rose",
+      "rose"
+    ],
+    [
+      "lemon",
+      "lemon",
+      "mint",
+      "mint"
+    ],
+    [
+      "amber",
+      "lemon"
+    ],
+    [
+      "rose",
+      "rose",
+      "rose"
+    ],
+    [
+      "lemon",
+      "sky"
+    ],
+    [
+      "lemon",
+      "lemon",
+      "lemon",
+      "mint"
+    ],
+    [
+      "lemon",
+      "lemon",
+      "violet",
+      "violet"
+    ],
+    [
+      "lemon",
+      "mint",
+      "mint"
+    ],
+    [
+      "lemon",
+      "mint"
+    ],
+    [
+      "coral",
+      "sky"
+    ],
+    [
+      "amber"
+    ],
+    [
+      "lemon"
+    ]
+  ],
+  "trayCount" : 3
+}

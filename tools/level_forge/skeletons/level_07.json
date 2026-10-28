@@ -1,0 +1,148 @@
+{
+ "id": 7,
+ "name": "Paper Boat",
+ "pencilSize": 4,
+ "boardRadius": 2,
+ "removed": [],
+ "artwork": {
+  "name": "Paper Boat",
+  "paper": "#EAF6FF",
+  "regions": [
+   {
+    "id": 1,
+    "color": "sky",
+    "shape": {
+     "type": "rect",
+     "x": 0,
+     "y": 0,
+     "w": 150,
+     "h": 100,
+     "radius": 0
+    }
+   },
+   {
+    "id": 2,
+    "color": "indigo",
+    "shape": {
+     "type": "rect",
+     "x": 0,
+     "y": 64,
+     "w": 150,
+     "h": 36,
+     "radius": 0
+    }
+   },
+   {
+    "id": 3,
+    "color": "coral",
+    "shape": {
+     "type": "polygon",
+     "points": [
+      [
+       38,
+       62
+      ],
+      [
+       112,
+       62
+      ],
+      [
+       96,
+       82
+      ],
+      [
+       54,
+       82
+      ]
+     ]
+    }
+   },
+   {
+    "id": 4,
+    "color": "lemon",
+    "shape": {
+     "type": "polygon",
+     "points": [
+      [
+       74,
+       18
+      ],
+      [
+       74,
+       60
+      ],
+      [
+       102,
+       60
+      ]
+     ]
+    }
+   },
+   {
+    "id": 5,
+    "color": "rose",
+    "shape": {
+     "type": "polygon",
+     "points": [
+      [
+       70,
+       24
+      ],
+      [
+       70,
+       60
+      ],
+      [
+       46,
+       60
+      ]
+     ]
+    }
+   },
+   {
+    "id": 6,
+    "color": "amber",
+    "shape": {
+     "type": "ellipse",
+     "cx": 124,
+     "cy": 20,
+     "rx": 11,
+     "ry": 11
+    }
+   }
+  ],
+  "lineArt": [
+   {
+    "type": "polygon",
+    "points": [
+     [
+      74,
+      14
+     ],
+     [
+      74,
+      62
+     ]
+    ]
+   },
+   {
+    "type": "polygon",
+    "points": [
+     [
+      8,
+      74
+     ],
+     [
+      30,
+      72
+     ],
+     [
+      52,
+      74
+     ]
+    ]
+   }
+  ]
+ },
+ "supply": []
+}
