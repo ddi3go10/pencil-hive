@@ -28,7 +28,11 @@ final class GameScene: SKScene {
     weak var gameDelegate: GameSceneDelegate?
     let feedback: Feedback
     /// Print each colour's symbol on its tiles (set before the scene is first drawn).
-    var showsSymbols = false
+    var showsSymbols = false {
+        didSet { if showsSymbols != oldValue, didBuild { requestRebuild() } }
+    }
+    private let reducedMotion: () -> Bool
+    var reduceMotion: Bool { reducedMotion() }
     /// The tray slot a VoiceOver user has picked up, waiting for an empty cell.
     var selectedSlot: Int?
     /// True while a SwiftUI card (pause, win, fail) covers the board, so nothing underneath can act.
@@ -77,9 +81,10 @@ final class GameScene: SKScene {
 
     // MARK: Lifecycle
 
-    init(engine: GameEngine, feedback: Feedback) {
+    init(engine: GameEngine, feedback: Feedback, reducedMotion: @escaping () -> Bool = GameScene.systemReduceMotion) {
         self.engine = engine
         self.feedback = feedback
+        self.reducedMotion = reducedMotion
         super.init(size: CGSize(width: 390, height: 844))
         scaleMode = .resizeFill
         anchorPoint = .zero

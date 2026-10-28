@@ -4,6 +4,8 @@ import SwiftUI
 struct GameScreen: View {
     @ObservedObject var model: GameViewModel
     @Environment(\.accessibilityReduceMotion) private var reduceMotion
+    @Environment(\.accessibilityDifferentiateWithoutColor) private var differentiateWithoutColor
+    @Environment(\.scenePhase) private var scenePhase
 
     /// Space the HUD and booster bar take, reserved so the SpriteKit scene lays itself out around them.
     private let hudHeight: CGFloat = 100
@@ -48,7 +50,21 @@ struct GameScreen: View {
             } message: {
                 Text("Your current board will be reset. Completed levels and best scores will be kept.")
             }
-            .onAppear { applyInsets(geo) }
+            .onAppear {
+                applyInsets(geo)
+                model.updateAccessibilitySettings(differentiateWithoutColor: differentiateWithoutColor)
+            }
+            .onChange(of: differentiateWithoutColor) { enabled in
+                model.updateAccessibilitySettings(differentiateWithoutColor: enabled)
+            }
+            .onChange(of: reduceMotion) { _ in
+                model.scene.updateHammerHighlights()
+            }
+            .onChange(of: scenePhase) { phase in
+                if phase == .active {
+                    model.updateAccessibilitySettings(differentiateWithoutColor: differentiateWithoutColor)
+                }
+            }
             .onChange(of: geo.safeAreaInsets.top) { _ in applyInsets(geo) }
             .onChange(of: geo.safeAreaInsets.bottom) { _ in applyInsets(geo) }
             .onChange(of: geo.size) { _ in applyInsets(geo) }
@@ -104,21 +120,18 @@ struct HUDView: View {
                     }
                     .padding(.vertical, 2)
                 }
-                .overlay(alignment: .trailing) {
-                    if model.showsPlacementHint {
-                        Text("Drag a stack onto an empty hex")
-                            .roundedFont(11, .bold)
-                            .foregroundColor(Palette.ink.opacity(0.6))
-                            .padding(.leading, 6)
-                            .background(Palette.cream)
-                    }
-                }
                 .accessibilityElement(children: .ignore)
                 .accessibilityLabel("Pencils still needed by color")
                 .accessibilityValue(model.hud.goals.map { chip in
                     chip.remaining == 0 ? "\(chip.color.displayName) complete"
                         : "\(chip.remaining) \(chip.color.displayName) pencils needed"
                 }.joined(separator: ". "))
+            }
+            if model.showsPlacementHint {
+                Text("Drag a stack onto an empty hex")
+                    .roundedFont(11, .bold)
+                    .foregroundColor(Palette.ink.opacity(0.6))
+                    .frame(maxWidth: .infinity, alignment: .trailing)
             }
         }
         .padding(.horizontal, 12)

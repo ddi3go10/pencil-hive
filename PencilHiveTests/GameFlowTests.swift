@@ -9,6 +9,89 @@ import SpriteKit
 @Suite("Game flow")
 @MainActor
 struct GameFlowTests {
+    @Test func reducedMotionCompletesPencilsAndRecordsTheWinWithoutFlights() throws {
+        let (model, _) = try app()
+        let cell = TestLevels.cell(0, 0)
+        let level = TestLevels.make(pencilSize: 3,
+            prefilled: [(TestLevels.cell(1, 0), [.coral, .coral])],
+            supply: [[.coral], [.sky], [.mint]], regions: [.coral])
+        let vm = GameViewModel(level: level, app: model, reducedMotion: { true })
+        vm.scene.rebuild()
+        let node = try #require(vm.scene.trayNodes[0])
+
+        vm.scene.commitPlacement(slot: 0, cell: cell, node: node)
+
+        #expect(vm.scene.engine.state.status.isWon)
+        #expect(vm.scene.phase == .finished)
+        #expect(vm.scene.finishPending)
+        #expect(vm.scene.pendingFlights == 0)
+        #expect(vm.hud.pencilsDone == 1)
+        #expect(vm.hud.pencilColors == [.coral])
+        #expect(model.progress.bestStars[level.id] != nil)
+        #expect(vm.scene.fxLayer.children.isEmpty)
+        #expect(vm.scene.trayNodes[0] == nil)
+        #expect(vm.scene.trayNodes.values.allSatisfy { !$0.hasActions() })
+    }
+
+    @Test func reducedMotionCancelsADragWithoutAFlightOrStuckInput() throws {
+        let (model, level) = try app()
+        let scene = GameScene(engine: GameEngine(level: level), feedback: model.feedback, reducedMotion: { true })
+        scene.rebuild()
+        let before = scene.engine.state
+        scene.pointerDown(at: scene.slotCenters[0])
+        #expect(scene.phase == .dragging)
+        scene.pointerMoved(to: CGPoint(x: 0, y: 0))
+        scene.pointerCancelled()
+        #expect(scene.phase == .idle)
+        #expect(scene.engine.state == before)
+        let node = try #require(scene.trayNodes[0])
+        #expect(hypot(node.position.x - scene.slotCenters[0].x, node.position.y - scene.slotCenters[0].y) < 0.01)
+        #expect(node.xScale == 1 && node.yScale == 1)
+    }
+
+    @Test func reducedMotionBoostersSettleAndKeepUndoWorking() throws {
+        let (model, _) = try app()
+        let level = TestLevels.make(supply: [[.sky], [.mint], [.lemon], [.rose], [.coral]], regions: [.violet])
+        let vm = GameViewModel(level: level, app: model, reducedMotion: { true })
+        let cell = TestLevels.cell(0, 0)
+        vm.scene.rebuild()
+        vm.scene.commitPlacement(slot: 0, cell: cell, node: try #require(vm.scene.trayNodes[0]))
+        vm.refreshTray()
+        #expect(vm.scene.phase == .idle && !vm.isResolving)
+        #expect(vm.scene.engine.state.boosters.refresh == level.boosters.refresh - 1)
+        vm.scene.smash(cell)
+        #expect(vm.scene.phase == .idle && !vm.isResolving)
+        #expect(vm.scene.engine.state.board.stack(at: cell) == nil)
+        #expect(vm.scene.engine.state.boosters.hammer == level.boosters.hammer - 1)
+        vm.undo()
+        #expect(vm.scene.phase == .idle)
+        #expect(vm.scene.engine.state.board.stack(at: cell) == TileStack([.sky]))
+    }
+
+    @Test func liveTileSymbolsUpdateTheHudAndDeferRedrawUntilPlaybackFinishes() throws {
+        let (model, level) = try app()
+        let vm = GameViewModel(level: level, app: model)
+        vm.updateAccessibilitySettings(differentiateWithoutColor: false)
+        vm.scene.rebuild()
+        let before = vm.scene.engine.state
+        vm.scene.phase = .animating
+
+        vm.updateAccessibilitySettings(differentiateWithoutColor: true)
+
+        #expect(vm.showsSymbols && vm.scene.showsSymbols)
+        #expect(vm.scene.needsRebuild)
+        #expect(!vm.scene.art.showsSymbols)
+        vm.scene.finishPlayback()
+        #expect(vm.scene.art.showsSymbols)
+        #expect(vm.scene.engine.state == before)
+        #expect(vm.scene.phase == .idle)
+        vm.updateAccessibilitySettings(differentiateWithoutColor: false)
+        #expect(!vm.showsSymbols && !vm.scene.art.showsSymbols)
+        model.setTileSymbols(true)
+        vm.updateAccessibilitySettings(differentiateWithoutColor: false)
+        #expect(vm.showsSymbols && vm.scene.art.showsSymbols)
+    }
+
     private func app() throws -> (AppModel, LevelDefinition) {
         let model = AppModel(save: SaveStore(storage: InMemorySaveStorage()), bundle: .main)
         let level = try #require(model.library.first)

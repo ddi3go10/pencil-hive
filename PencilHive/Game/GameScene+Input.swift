@@ -65,7 +65,7 @@ extension GameScene {
         dragLayer.addChild(node)
         node.removeAllActions()
         let lifted = CGPoint(x: point.x, y: point.y + dragLift)
-        node.setScale(1.1)
+        node.setScale(reduceMotion ? 1 : 1.1)
         node.position = CGPoint(x: lifted.x, y: lifted.y - node.localPosition(ofTile: max(0, node.height - 1)).y * node.yScale)
         drag = DragState(slot: best.slot, node: node, target: nil)
         phase = .dragging
@@ -144,6 +144,18 @@ extension GameScene {
     }
 
     private func returnToTray(slot: Int, node: StackNode) {
+        if reduceMotion {
+            node.removeAllActions()
+            node.removeFromParent()
+            node.position = slotCenters[slot]
+            node.setScale(1)
+            trayLayer.addChild(node)
+            node.alpha = 0
+            node.run(.fadeIn(withDuration: 0.15))
+            phase = .idle
+            if needsRebuild { rebuild() }
+            return
+        }
         phase = .animating
         feedback.play(.error)
         node.run(.group([

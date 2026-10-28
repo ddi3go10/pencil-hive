@@ -26,6 +26,16 @@ struct ScreenshotHarnessTests {
         Phone(name: "promax-440x956", size: CGSize(width: 440, height: 956), safeTop: 62, safeBottom: 34),
     ]
 
+    @Test func rendersSettingsOnASmallPhoneAtLargeTextSize() throws {
+        guard FileManager.default.fileExists(atPath: Self.outputFolder) else { return }
+        let phone = Phone(name: "small-375x667", size: CGSize(width: 375, height: 667), safeTop: 20, safeBottom: 0)
+        let app = AppModel(save: SaveStore(storage: InMemorySaveStorage()), bundle: .main)
+        try render(SettingsView().environmentObject(app).environment(\.dynamicTypeSize, .accessibility2),
+                   phone: phone, file: "settings-large-text")
+        try render(SettingsView().environmentObject(app).environment(\.dynamicTypeSize, .accessibility2),
+                   phone: phone, file: "settings-large-text-scrolled", scrollToBottom: true)
+    }
+
     private func spin(_ seconds: TimeInterval) {
         RunLoop.current.run(until: Date().addingTimeInterval(seconds))
     }
@@ -34,7 +44,7 @@ struct ScreenshotHarnessTests {
         try render(AnyView(RootView().environmentObject(app)), phone: phone, file: file)
     }
 
-    private func render<V: View>(_ view: V, phone: Phone, file: String) throws {
+    private func render<V: View>(_ view: V, phone: Phone, file: String, scrollToBottom: Bool = false) throws {
         let host = UIHostingController(rootView: view)
         let window = UIWindow(frame: CGRect(origin: .zero, size: phone.size))
         if let scene = UIApplication.shared.connectedScenes.first as? UIWindowScene { window.windowScene = scene }
@@ -48,6 +58,16 @@ struct ScreenshotHarnessTests {
             bottom: phone.safeBottom - window.safeAreaInsets.bottom + host.additionalSafeAreaInsets.bottom, right: 0)
         window.layoutIfNeeded()
         spin(1.0)
+        if scrollToBottom {
+            func firstScrollView(in view: UIView) -> UIScrollView? {
+                if let scroll = view as? UIScrollView { return scroll }
+                return view.subviews.lazy.compactMap { firstScrollView(in: $0) }.first
+            }
+            let scroll = try #require(firstScrollView(in: host.view))
+            #expect(scroll.contentSize.height > scroll.bounds.height)
+            scroll.setContentOffset(CGPoint(x: 0, y: scroll.contentSize.height - scroll.bounds.height + scroll.adjustedContentInset.bottom), animated: false)
+            spin(0.1)
+        }
         let renderer = UIGraphicsImageRenderer(size: phone.size)
         let image = renderer.image { _ in
             window.drawHierarchy(in: CGRect(origin: .zero, size: phone.size), afterScreenUpdates: true)

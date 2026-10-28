@@ -66,6 +66,7 @@ struct SymbolShape: Shape {
 
 /// A fat, tappable button with a darker "ledge" like the game's tiles.
 struct ChunkyButtonStyle: ButtonStyle {
+    @Environment(\.accessibilityReduceMotion) private var reduceMotion
     var color: Color = Palette.green
     var compact = false
 
@@ -82,8 +83,8 @@ struct ChunkyButtonStyle: ButtonStyle {
                     .overlay(RoundedRectangle(cornerRadius: 16, style: .continuous).strokeBorder(Color.white.opacity(0.35), lineWidth: 2))
                     .shadow(color: Color.black.opacity(0.28), radius: 0, x: 0, y: configuration.isPressed ? 1 : 4)
             )
-            .offset(y: configuration.isPressed ? 3 : 0)
-            .animation(.easeOut(duration: 0.08), value: configuration.isPressed)
+            .offset(y: configuration.isPressed && !reduceMotion ? 3 : 0)
+            .animation(reduceMotion ? nil : .easeOut(duration: 0.08), value: configuration.isPressed)
     }
 }
 
